@@ -45,7 +45,7 @@ ball_change_x = 5
 ball_change_y = 5
 
 score = 0
-fps = 0
+fps = 60
 
 
 # draws the paddle. Also restricts its movement between the edges
@@ -162,6 +162,6 @@ while not done:
 
     pygame.display.flip()
 
-    clock.tick(60)
+    clock.tick(fps)
 
 pygame.quit()
